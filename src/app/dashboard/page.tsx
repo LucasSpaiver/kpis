@@ -52,17 +52,19 @@ export default function Dashboard() {
           👋 Bem-vindo(a), {userEmail}
         </h1>
 
-        <p className="mb-6 text-gray-600">
-          Aqui você poderá visualizar estatísticas, gráficos e indicadores de
-          desempenho.
-        </p>
-
         <div className="flex gap-4">
           <button
             onClick={() => router.push("/registro")}
             className="bg-green-600 hover:bg-green-700 text-white p-3 rounded-lg font-semibold"
           >
             Registrar nova atividade
+          </button>
+
+          <button
+            onClick={() => router.push("/ti")}
+            className="bg-green-600 hover:bg-green-700 text-white p-3 rounded-lg font-semibold"
+          >
+            TI
           </button>
 
           <button
